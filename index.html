@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gobar Cake Pro | Pure Natural & Eco-Friendly Fuel</title>
+    <meta name="description"
+        content="Handmade, organic, and traditional cow dung cakes for sustainable cooking and puja. Shop our premium eco-friendly fuel products.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- CDNs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="loader" class="loader-wrapper">
+        <div class="loader-inner">
+            <span class="loader-text">Nurturing Nature...</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header id="header">
+        <nav class="container">
+            <div class="logo">
+                <span class="logo-icon"><i data-lucide="leaf"></i></span>
+                <span class="logo-text">GobarCake<span>Pro</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#products" class="btn btn-primary sm">Shop Now</a>
+            </div>
+            <button class="theme-toggle" id="theme-toggle" title="Toggle Dark/Light Mode">
+                <i data-lucide="moon"></i> <span>Dark Mode</span>
+            </button>
+            <button class="mobile-menu-toggle"><i data-lucide="menu"></i></button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-grid">
+            <div class="hero-content" data-scroll>
+                <div class="badge">100% Traditional & Organic</div>
+                <h1 class="hero-title">
+                    Pure Natural <span class="accent">Cow Dung Cakes</span> – Eco-Friendly Fuel for Modern Living
+                </h1>
+                <p class="hero-subtitle">
+                    Handmade • Organic • Traditional • Sustainable. Bringing the warmth of rural tradition to your home
+                    with 100% natural, eco-friendly energy.
+                </p>
+                <div class="hero-actions">
+                    <a href="#products" class="btn btn-primary">Shop Now</a>
+                    <a href="#contact" class="btn btn-outline">Contact Us</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div id="canvas-container"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="mouse"></span>
+            <span class="text">Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section container py-xl">
+        <div class="section-header center" data-scroll>
+            <h2 class="section-title">The Essence of Tradition</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="about-grid mt-lg">
+            <div class="about-card" data-scroll-fade-up>
+                <div class="card-icon"><i data-lucide="hand"></i></div>
+                <h3>Traditional Handmade</h3>
+                <p>Each cake is meticulously shaped by hand using age-old techniques passed down through generations in
+                    rural India.</p>
+            </div>
+            <div class="about-card" data-scroll-fade-up>
+                <div class="card-icon"><i data-lucide="sprout"></i></div>
+                <h3>Eco-Friendly Materials</h3>
+                <p>Made from 100% pure cow dung, straw, and sun-baked to perfection. No chemicals, additives, or
+                    artificial binders.</p>
+            </div>
+            <div class="about-card" data-scroll-fade-up>
+                <div class="card-icon"><i data-lucide="repeat"></i></div>
+                <h3>Sustainable Practices</h3>
+                <p>Promoting circular economy by converting farm waste into valuable clean energy for cooking and
+                    spiritual rituals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Showcase -->
+    <section id="products" class="products-section py-xl">
+        <div class="container">
+            <div class="section-header" data-scroll>
+                <h2 class="section-title">Our Premium Selection</h2>
+                <p class="section-subtitle">Choose the perfect fuel for your needs, from daily cooking to sacred puja
+                    rituals.</p>
+            </div>
+            <div class="product-grid mt-lg">
+                <!-- Product 1 -->
+                <div class="product-card" data-scroll-fade-up>
+                    <div class="product-visual">
+                        <img src="https://images.unsplash.com/photo-1618367588411-d9a90fefe114?q=80&w=500&auto=format&fit=crop"
+                            alt="Round Cow Dung Cakes" class="product-real-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Round Cow Dung Cakes</h3>
+                        <p>Classic disc shape, perfect for traditional Chulha cooking and daily use.</p>
+                        <div class="product-price">₹199 <small>/ Pack of 10</small></div>
+                        <button class="btn btn-primary full">Buy Now</button>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card" data-scroll-fade-up>
+                    <div class="product-visual">
+                        <img src="https://images.unsplash.com/photo-1594806654881-8079a4de56e4?q=80&w=500&auto=format&fit=crop"
+                            alt="Square Cow Dung Cakes" class="product-real-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Square Cow Dung Cakes</h3>
+                        <p>Compact square shape specifically designed for Hawan and Puja ceremonies.</p>
+                        <div class="product-price">₹249 <small>/ Pack of 10</small></div>
+                        <button class="btn btn-primary full">Buy Now</button>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card" data-scroll-fade-up>
+                    <div class="product-visual">
+                        <img src="https://images.unsplash.com/photo-1611162458324-aae4eb4129a4?q=80&w=500&auto=format&fit=crop"
+                            alt="Premium Dry Gobar Cakes" class="product-real-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Dry Gobar Cakes</h3>
+                        <p>Ultra-dry, low-moisture cakes for long-lasting burn and minimal smoke.</p>
+                        <div class="product-price">₹299 <small>/ Pack of 5</small></div>
+                        <button class="btn btn-primary full">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits-section py-xl bg-beige">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefits-content" data-scroll>
+                    <h2 class="section-title">Why Choose Gobar Cakes?</h2>
+                    <p class="mt-sm">Experience the benefits of natural fuel that respects both tradition and the
+                        environment.</p>
+                    <ul class="benefits-list mt-md">
+                        <li><i data-lucide="check-circle"></i> 100% Natural & Organic Fuel</li>
+                        <li><i data-lucide="clock"></i> Long-lasting Burning Time</li>
+                        <li><i data-lucide="wind"></i> Significantly Lower Smoke Emissions</li>
+                        <li><i data-lucide="smile"></i> Perfect for Rituals (Puja & Hawan)</li>
+                        <li><i data-lucide="earth"></i> Zero Waste & Biodegradable</li>
+                    </ul>
+                </div>
+                <div class="benefits-visual" data-scroll>
+                    <div class="floating-icons-container">
+                        <!-- Animated icons will be handled in JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process-section py-xl">
+        <div class="container">
+            <div class="section-header center" data-scroll>
+                <h2 class="section-title">Crafted with Care</h2>
+                <p>Our traditional manufacturing process ensures the highest quality.</p>
+            </div>
+            <div class="process-timeline mt-lg">
+                <div class="timeline-item" data-scroll-fade-up>
+                    <div class="timeline-num">01</div>
+                    <div class="timeline-content">
+                        <h3>Collection</h3>
+                        <p>Sourcing pure cow dung from organic, grass-fed cattle farms.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-scroll-fade-up>
+                    <div class="timeline-num">02</div>
+                    <div class="timeline-content">
+                        <h3>Hand-Shaping</h3>
+                        <p>Skillfully blending with straw and shaping by hand.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-scroll-fade-up>
+                    <div class="timeline-num">03</div>
+                    <div class="timeline-content">
+                        <h3>Natural Drying</h3>
+                        <p>Slow sun-drying process to preserve energy density.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-scroll-fade-up>
+                    <div class="timeline-num">04</div>
+                    <div class="timeline-content">
+                        <h3>Eco-Packaging</h3>
+                        <p>Wrapped in sustainable materials for safe delivery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section py-xl bg-earth">
+        <div class="container">
+            <h2 class="section-title white center" data-scroll>What Our Community Says</h2>
+            <div class="testimonial-slider mt-lg" data-scroll>
+                <div class="testimonial-card">
+                    <div class="rating">★★★★★</div>
+                    <p>"Excellent quality gobar cakes. They burn for a long time and have that authentic earthy aroma.
+                        Perfect for my daily puja."</p>
+                    <div class="user-info">
+                        <div class="user-avatar"></div>
+                        <span>Rajesh Sharma</span>
+                    </div>
+                </div>
+                <!-- More testmonials... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-xl">
+        <div class="container contact-grid">
+            <div class="contact-info" data-scroll>
+                <h2 class="section-title">Get In Touch</h2>
+                <p>Have questions about our products or want to place a bulk order?</p>
+                <div class="contact-details mt-md">
+                    <div class="detail-item">
+                        <i data-lucide="phone"></i>
+                        <span>+91 98765 43210</span>
+                    </div>
+                    <div class="detail-item">
+                        <i data-lucide="mail"></i>
+                        <span>hello@gobarcakepro.com</span>
+                    </div>
+                    <div class="detail-item">
+                        <i data-lucide="map-pin"></i>
+                        <span>123 Rural Heritage Lane, Village Eco-Hub, India</span>
+                    </div>
+                </div>
+                <div class="whatsapp-btn-container mt-sm">
+                    <a href="#" class="btn btn-whatsapp"><i data-lucide="message-circle"></i> Chat on WhatsApp</a>
+                </div>
+            </div>
+            <form class="contact-form" data-scroll-fade-up>
+                <h3>Send Us a Message</h3>
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" placeholder="How can we help you?" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary full">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-text white">GobarCake<span>Pro</span></span>
+                </div>
+                <p class="mt-sm">Preserving traditional values through sustainable, eco-friendly energy solutions for a
+                    greener tomorrow.</p>
+                <div class="social-links mt-sm">
+                    <a href="#"><i data-lucide="instagram"></i></a>
+                    <a href="#"><i data-lucide="facebook"></i></a>
+                    <a href="#"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Our Products</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Stay Updated</h4>
+                <p>Subscribe to our newsletter for tips on sustainable living.</p>
+                <form class="newsletter-form mt-xs">
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit"><i data-lucide="chevron-right"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom center">
+            <p>&copy; 2026 Gobar Cake Pro. All rights reserved. Handcrafted for a sustainable future.</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
